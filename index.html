@@ -7,7 +7,7 @@
 <meta name="description" content="Portfolio of Hariharan Venkatesan — IT Project Manager and Business Analyst based in Karlsruhe, Germany. Available immediately.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#F2F5F3;
@@ -71,8 +71,8 @@ header{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 }
 .geo::before{content:"";display:inline-block;width:34px;height:1px;background:var(--teal)}
 h1{
-  font-family:'Archivo',sans-serif;font-weight:900;
-  font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.02;
+  font-family:'Poppins',sans-serif;font-weight:700;
+  font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.08;
   letter-spacing:-.02em;max-width:14ch;
 }
 .hero-role{
@@ -100,6 +100,35 @@ h1{
 .badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal);animation:pulse 2.2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 @media (prefers-reduced-motion:reduce){.badge::before{animation:none}html{scroll-behavior:auto}}
+
+/* ---------- Benchmarks mosaic ---------- */
+.bench{max-width:1060px;margin:0 auto;padding:48px 24px 8px}
+.bench-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px}
+.bench-feat{
+  grid-row:span 2;background:var(--ink);border-radius:6px;
+  padding:26px 28px;display:flex;flex-direction:column;justify-content:center;
+}
+.bench-feat .bench-num{color:#fff;font-size:3.6rem}
+.bench-feat .bench-k{color:#9FE1CB;font-size:11.5px}
+.bench-tile{
+  background:var(--card);border:1px solid var(--line);border-radius:6px;
+  padding:16px 18px 14px;border-top:2px solid var(--teal);
+}
+.bench-num{font-family:'Archivo',sans-serif;font-weight:900;font-size:1.65rem;line-height:1;color:var(--ink)}
+.bench-num sup{font-size:.95rem;color:var(--pin);font-weight:800}
+.bench-k{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-soft);margin-top:8px;line-height:1.5;
+}
+@media(max-width:760px){
+  .bench-grid{grid-template-columns:1fr 1fr}
+  .bench-feat{grid-column:span 2;grid-row:auto;padding:22px 24px}
+  .bench-feat .bench-num{font-size:2.8rem}
+}
+.mini-award{
+  display:inline-block;margin-top:7px;font-size:.85rem;font-weight:600;
+  color:var(--teal-dark);background:rgba(14,107,99,.08);border-radius:3px;padding:3px 9px;
+}
 
 /* ---------- Sections ---------- */
 section{max-width:1060px;margin:0 auto;padding:74px 24px}
@@ -240,6 +269,10 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.1)}
   </div>
 </header>
 
+<div class="bench" aria-label="Key figures">
+  <div class="bench-grid" id="benchGrid"></div>
+</div>
+
 <section id="about">
   <div class="sec-head"><div class="sec-ref">§01 · Orientation</div><h2>About</h2></div>
   <div class="about-grid">
@@ -317,6 +350,14 @@ const DATA = {
 
   contactPitch: "I'm currently seeking full-time IT Project Manager and Business Analyst roles across Germany and open to relocation. If you think I could be a fit for your team, I'd love to hear from you.",
 
+  stats: [
+    { n: "0", sup: "", k: "audit findings · 12-mo GDPR record" },
+    { n: "20", sup: "+", k: "concurrent programmes managed" },
+    { n: "30", sup: "%", k: "programme effectiveness gain" },
+    { n: "60", sup: "%", k: "documentation turnaround cut" },
+    { n: "95", sup: "%+", k: "stakeholder satisfaction" },
+  ],
+
   about: [
     "I'm a project manager and business analyst who likes building things that remove friction. At <strong>Momenta Europe</strong> in Stuttgart, I designed and delivered a GDPR-compliant employee access provisioning platform and cut documentation turnaround by <strong>60%</strong> using AI/LLM automation. Before that, at <strong>Dell Technologies</strong>, I managed 20+ concurrent digital learning programmes and won a Brandon Hall HCM Excellence Gold Award.",
     "I'm completing my <strong>M.Sc. in Information Systems Engineering and Management at KIT</strong> (July 2026), where my thesis on Multi-Agent Reinforcement Learning was graded 1.3. I work comfortably across the whole delivery chain — requirements elicitation, stakeholder management, process modelling, and hands-on execution.",
@@ -324,7 +365,7 @@ const DATA = {
   ],
 
   facts: [
-    { k: "Education", v: "M.Sc. ISEM, Karlsruhe Institute of Technology (KIT)" },
+    { k: "Education", v: "M.Sc. ISEM, Karlsruhe Institute of Technology (KIT)<br><span class='mini-award'>🎓 Final grade 1.7</span>" },
     { k: "Languages", v: "English (fluent) · German (B1, improving) · Tamil (native)" },
     { k: "Location", v: "Karlsruhe — open to relocation across Germany" },
     { k: "Experience", v: "~5 years · PM, BA & learning technology" },
@@ -336,20 +377,24 @@ const DATA = {
       title: "Project Management & Business Development (Working Student)",
       org: "Momenta Europe GmbH",
       points: [
-        "Designed and delivered a GDPR-compliant employee access provisioning platform, coordinating requirements across HR, IT, and management stakeholders.",
-        "Reduced documentation turnaround time by 60% by introducing AI/LLM-based automation into internal workflows.",
-        "Supported business development with market analysis, proposal preparation, and client-facing documentation.",
+        "Built a GDPR-compliant access provisioning platform end-to-end — manual workflow gone, approvals same-day, and a clean audit record for 12 straight months.",
+        "Kept the multi-stakeholder Donau-Bosch Toolchain integration on schedule through weekly syncs, live issue tracking, and blocker resolution.",
+        "Spotted an automation opportunity in legal documentation and shipped an AI/LLM solution — turnaround down ~60%.",
+        "Backed business development with market analysis and client-facing proposals.",
       ],
+      tags: ["GDPR & Compliance", "Process Automation", "Stakeholder Management", "AI / LLM Tooling", "Risk & Issue Tracking"],
     },
     {
       when: "Aug 2019 — Oct 2023 · Bangalore",
       title: "Senior Analyst, Learning Design & Development",
       org: "Dell Technologies",
       points: [
-        "Managed 20+ concurrent digital learning programmes end-to-end — scoping, stakeholder alignment, delivery, and quality assurance.",
-        "Won a Brandon Hall HCM Excellence Gold Award for learning programme design.",
-        "Acted as the bridge between business stakeholders and design/development teams, translating needs into clear requirements.",
+        "Ran 20+ concurrent digital programmes end-to-end for global corporate clients, coordinating 10+ cross-functional partners.",
+        "Held 95%+ stakeholder satisfaction across every programme — structured needs analyses with 10+ SMEs, designs iterated before launch.",
+        "Lifted programme effectiveness 30% by embedding analytics checkpoints into delivery.",
+        "Gained 30% production efficiency through process standardisation and modular content architecture.",
       ],
+      tags: ["Programme Management", "Needs Analysis", "KPI Reporting", "Process Standardisation", "Cross-functional Coordination"],
     },
   ],
 
@@ -414,12 +459,24 @@ $("aboutText").innerHTML = DATA.about.map(p => `<p>${p}</p>`).join("");
 $("factsList").innerHTML = DATA.facts.map(f =>
   `<div class="fact"><div class="k">${f.k}</div><div class="v">${f.v}</div></div>`).join("");
 
+const [benchFeat, ...benchRest] = DATA.stats;
+$("benchGrid").innerHTML = `
+  <div class="bench-feat">
+    <div class="bench-num">${benchFeat.n}<sup>${benchFeat.sup}</sup></div>
+    <div class="bench-k">${benchFeat.k}</div>
+  </div>` + benchRest.map(s => `
+  <div class="bench-tile">
+    <div class="bench-num">${s.n}<sup>${s.sup}</sup></div>
+    <div class="bench-k">${s.k}</div>
+  </div>`).join("");
+
 $("routeList").innerHTML = DATA.experience.map(e => `
   <div class="stop">
     <div class="stop-when">${e.when}</div>
     <h3>${e.title}</h3>
     <div class="org">${e.org}</div>
     <ul>${e.points.map(p => `<li>${p}</li>`).join("")}</ul>
+    <div class="tags" style="margin-top:14px">${(e.tags || []).map(t => `<span class="tag">${t}</span>`).join("")}</div>
   </div>`).join("");
 
 $("projGrid").innerHTML = DATA.projects.map(p => `
