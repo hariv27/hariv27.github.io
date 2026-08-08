@@ -3,146 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hariharan Venkatesan — IT Project Manager & Business Analyst</title>
+<title>Hariharan Venkatesan — IT Project Manager &amp; Business Analyst</title>
 <meta name="description" content="Portfolio of Hariharan Venkatesan — IT Project Manager and Business Analyst based in Karlsruhe, Germany. Available immediately.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F2F5F3;
-  --paper-deep:#E7EDEA;
-  --ink:#17282B;
-  --ink-soft:#42555A;
-  --teal:#0E6B63;
-  --teal-dark:#0A4A45;
-  --contour:#CBD9D2;
-  --pin:#C94957;
-  --line:#D8E1DC;
-  --card:#FFFFFF;
+--paper:#F2F5F3;
+--paper-deep:#E7EDEA;
+--ink:#17282B;
+--ink-soft:#42555A;
+--teal:#0E6B63;
+--teal-dark:#0A4A45;
+--contour:#CBD9D2;
+--pin:#C94957;
+--line:#D8E1DC;
+--card:#FFFFFF;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  font-family:'IBM Plex Sans',system-ui,sans-serif;
-  background:var(--paper);
-  color:var(--ink);
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
+font-family:'IBM Plex Sans',system-ui,sans-serif;
+background:var(--paper);
+color:var(--ink);
+line-height:1.6;
+-webkit-font-smoothing:antialiased;
 }
 ::selection{background:var(--teal);color:#fff}
 a{color:var(--teal);text-decoration:none}
 a:hover{text-decoration:underline}
 a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:2px}
 .mono{font-family:'IBM Plex Mono',monospace}
-
 /* ---------- Nav ---------- */
 nav{
-  position:sticky;top:0;z-index:50;
-  background:rgba(242,245,243,.88);backdrop-filter:blur(8px);
-  border-bottom:1px solid var(--line);
+position:sticky;top:0;z-index:50;
+background:rgba(242,245,243,.88);backdrop-filter:blur(8px);
+border-bottom:1px solid var(--line);
 }
 .nav-inner{
-  max-width:1060px;margin:0 auto;padding:14px 24px;
-  display:flex;align-items:center;justify-content:space-between;gap:16px;
+max-width:1060px;margin:0 auto;padding:14px 24px;
+display:flex;align-items:center;justify-content:space-between;gap:16px;
 }
 .nav-mark{font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;letter-spacing:.04em;color:var(--ink)}
 a.nav-mark:hover{text-decoration:none;color:var(--teal)}
 .nav-mark .dot{color:var(--pin)}
 .nav-links{display:flex;gap:22px;flex-wrap:wrap}
 .nav-links a{
-  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;
-  text-transform:uppercase;color:var(--ink-soft);
+font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;
+text-transform:uppercase;color:var(--ink-soft);
 }
 .nav-links a:hover{color:var(--teal);text-decoration:none}
-
 /* ---------- Hero ---------- */
 header{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 .contours{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .contours path{fill:none;stroke:var(--contour);stroke-width:1.4}
 .hero{
-  position:relative;max-width:1060px;margin:0 auto;
-  padding:96px 24px 88px;
+position:relative;max-width:1060px;margin:0 auto;
+padding:96px 24px 88px;
 }
 .geo{
-  font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;
-  color:var(--teal-dark);text-transform:uppercase;margin-bottom:22px;
-  display:flex;align-items:center;gap:10px;
+font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;
+color:var(--teal-dark);text-transform:uppercase;margin-bottom:22px;
+display:flex;align-items:center;gap:10px;
 }
 .geo::before{content:"";display:inline-block;width:34px;height:1px;background:var(--teal)}
 h1{
-  font-family:'Poppins',sans-serif;font-weight:700;
-  font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.08;
-  letter-spacing:-.02em;max-width:14ch;
+font-family:'Poppins',sans-serif;font-weight:700;
+font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.08;
+letter-spacing:-.02em;max-width:14ch;
 }
 .hero-role{
-  font-family:'Archivo',sans-serif;font-weight:700;
-  font-size:clamp(1.05rem,2.4vw,1.35rem);color:var(--teal-dark);
-  margin-top:18px;letter-spacing:.01em;
+font-family:'Archivo',sans-serif;font-weight:700;
+font-size:clamp(1.05rem,2.4vw,1.35rem);color:var(--teal-dark);
+margin-top:18px;letter-spacing:.01em;
 }
 .hero-pitch{max-width:56ch;margin-top:18px;color:var(--ink-soft);font-size:1.02rem}
 .hero-cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .btn{
-  display:inline-flex;align-items:center;gap:8px;
-  font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;
-  padding:12px 22px;border-radius:3px;border:1.5px solid var(--ink);
-  color:var(--ink);background:transparent;transition:all .18s ease;
+display:inline-flex;align-items:center;gap:8px;
+font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;
+padding:12px 22px;border-radius:3px;border:1.5px solid var(--ink);
+color:var(--ink);background:transparent;transition:all .18s ease;
 }
 .btn:hover{background:var(--ink);color:var(--paper);text-decoration:none}
 .btn.primary{background:var(--teal);border-color:var(--teal);color:#fff}
 .btn.primary:hover{background:var(--teal-dark);border-color:var(--teal-dark)}
 .badge{
-  display:inline-flex;align-items:center;gap:8px;
-  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;
-  text-transform:uppercase;color:var(--teal-dark);
-  border:1px solid var(--teal);border-radius:20px;padding:6px 14px;background:rgba(14,107,99,.06);
+display:inline-flex;align-items:center;gap:8px;
+font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;
+text-transform:uppercase;color:var(--teal-dark);
+border:1px solid var(--teal);border-radius:20px;padding:6px 14px;background:rgba(14,107,99,.06);
 }
 .badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal);animation:pulse 2.2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 @media (prefers-reduced-motion:reduce){.badge::before{animation:none}html{scroll-behavior:auto}}
-
 /* ---------- Benchmarks mosaic ---------- */
 .bench{max-width:1060px;margin:0 auto;padding:48px 24px 8px}
 .bench-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px}
 .bench-feat{
-  grid-row:span 2;background:var(--ink);border-radius:6px;
-  padding:26px 28px;display:flex;flex-direction:column;justify-content:center;
+grid-row:span 2;background:var(--ink);border-radius:6px;
+padding:26px 28px;display:flex;flex-direction:column;justify-content:center;
 }
 .bench-feat .bench-num{color:#fff;font-size:3.6rem}
 .bench-feat .bench-k{color:#9FE1CB;font-size:11.5px}
 .bench-tile{
-  background:var(--card);border:1px solid var(--line);border-radius:6px;
-  padding:16px 18px 14px;border-top:2px solid var(--teal);
+background:var(--card);border:1px solid var(--line);border-radius:6px;
+padding:16px 18px 14px;border-top:2px solid var(--teal);
 }
 .bench-num{font-family:'Archivo',sans-serif;font-weight:900;font-size:1.65rem;line-height:1;color:var(--ink)}
 .bench-num sup{font-size:.95rem;color:var(--pin);font-weight:800}
 .bench-k{
-  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;
-  text-transform:uppercase;color:var(--ink-soft);margin-top:8px;line-height:1.5;
+font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;
+text-transform:uppercase;color:var(--ink-soft);margin-top:8px;line-height:1.5;
 }
 @media(max-width:760px){
-  .bench-grid{grid-template-columns:1fr 1fr}
-  .bench-feat{grid-column:span 2;grid-row:auto;padding:22px 24px}
-  .bench-feat .bench-num{font-size:2.8rem}
+.bench-grid{grid-template-columns:1fr 1fr}
+.bench-feat{grid-column:span 2;grid-row:auto;padding:22px 24px}
+.bench-feat .bench-num{font-size:2.8rem}
 }
 .mini-award{
-  display:inline-block;margin-top:7px;font-size:.85rem;font-weight:600;
-  color:var(--teal-dark);background:rgba(14,107,99,.08);border-radius:3px;padding:3px 9px;
+display:inline-block;margin-top:7px;font-size:.85rem;font-weight:600;
+color:var(--teal-dark);background:rgba(14,107,99,.08);border-radius:3px;padding:3px 9px;
 }
-
+a.mini-award:hover{text-decoration:none;background:rgba(14,107,99,.16)}
 /* ---------- Sections ---------- */
 section{max-width:1060px;margin:0 auto;padding:74px 24px}
 .sec-head{margin-bottom:40px}
 .sec-ref{
-  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--pin);margin-bottom:8px;
+font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;
+text-transform:uppercase;color:var(--pin);margin-bottom:8px;
 }
 h2{
-  font-family:'Archivo',sans-serif;font-weight:800;
-  font-size:clamp(1.6rem,3.6vw,2.2rem);letter-spacing:-.01em;
+font-family:'Archivo',sans-serif;font-weight:800;
+font-size:clamp(1.6rem,3.6vw,2.2rem);letter-spacing:-.01em;
 }
 .sec-rule{height:1px;background:var(--line);max-width:1060px;margin:0 auto}
-
 /* About */
 .about-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:56px}
 .about-text p{color:var(--ink-soft);margin-bottom:16px}
@@ -152,37 +148,35 @@ h2{
 .fact .k{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
 .fact .v{font-weight:600;font-size:.98rem;margin-top:2px}
 @media(max-width:760px){.about-grid{grid-template-columns:1fr;gap:36px}}
-
 /* Experience: route line */
 .route{position:relative;padding-left:34px}
 .route::before{
-  content:"";position:absolute;left:8px;top:6px;bottom:6px;width:0;
-  border-left:2px dashed var(--teal);opacity:.55;
+content:"";position:absolute;left:8px;top:6px;bottom:6px;width:0;
+border-left:2px dashed var(--teal);opacity:.55;
 }
 .stop{position:relative;padding-bottom:46px}
 .stop:last-child{padding-bottom:0}
 .stop::before{
-  content:"";position:absolute;left:-32px;top:5px;width:14px;height:14px;
-  border-radius:50%;background:var(--paper);border:3px solid var(--teal);
+content:"";position:absolute;left:-32px;top:5px;width:14px;height:14px;
+border-radius:50%;background:var(--paper);border:3px solid var(--teal);
 }
 .stop-when{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.08em;color:var(--pin);text-transform:uppercase}
 .stop h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.18rem;margin-top:4px}
 .stop .org{color:var(--teal-dark);font-weight:600;font-size:.95rem;margin-top:2px}
 .stop ul{margin-top:12px;padding-left:18px;color:var(--ink-soft)}
 .stop li{margin-bottom:7px;font-size:.97rem}
-
 /* Projects */
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
 .card{
-  background:var(--card);border:1px solid var(--line);border-radius:6px;
-  padding:26px 26px 24px;display:flex;flex-direction:column;
-  transition:transform .18s ease,box-shadow .18s ease;
+background:var(--card);border:1px solid var(--line);border-radius:6px;
+padding:26px 26px 24px;display:flex;flex-direction:column;
+transition:transform .18s ease,box-shadow .18s ease;
 }
 .card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(23,40,43,.08)}
 @media (prefers-reduced-motion:reduce){.card:hover{transform:none}}
 .card-pin{
-  font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--pin);display:flex;align-items:center;gap:7px;margin-bottom:12px;
+font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.12em;
+text-transform:uppercase;color:var(--pin);display:flex;align-items:center;gap:7px;margin-bottom:12px;
 }
 .card-pin svg{flex:none}
 .card h3{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.12rem;line-height:1.25}
@@ -190,7 +184,6 @@ h2{
 .card p{color:var(--ink-soft);font-size:.94rem;margin-top:12px;flex:1}
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
 .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);border:1px solid var(--line);border-radius:3px;padding:3px 8px;background:var(--paper)}
-
 /* Achievements: legend style */
 .legend{border:1px solid var(--line);border-radius:6px;background:var(--card);overflow:hidden}
 .legend-row{display:flex;gap:20px;align-items:baseline;padding:20px 26px;border-bottom:1px solid var(--line)}
@@ -199,17 +192,15 @@ h2{
 .legend-body strong{font-family:'Archivo',sans-serif;font-weight:700;font-size:1rem}
 .legend-body span{display:block;color:var(--ink-soft);font-size:.92rem;margin-top:3px}
 @media(max-width:560px){.legend-row{flex-direction:column;gap:4px}}
-
 /* Skills */
 .skill-groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:34px}
 .skill-group h3{
-  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--teal-dark);margin-bottom:14px;
-  padding-bottom:8px;border-bottom:2px solid var(--teal);display:inline-block;
+font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;
+text-transform:uppercase;color:var(--teal-dark);margin-bottom:14px;
+padding-bottom:8px;border-bottom:2px solid var(--teal);display:inline-block;
 }
 .skill-group .tags{margin-top:0}
 .skill-group .tag{font-size:12px;padding:5px 11px}
-
 /* Contact / footer */
 .contact{background:var(--ink);color:var(--paper)}
 .contact-inner{max-width:1060px;margin:0 auto;padding:80px 24px 70px}
@@ -223,224 +214,216 @@ h2{
 .contact .btn.primary:hover{background:#12857b;border-color:#12857b;color:#fff}
 footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.1)}
 .foot-inner{
-  max-width:1060px;margin:0 auto;padding:22px 24px;
-  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
-  font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#7E908C;letter-spacing:.06em;
+max-width:1060px;margin:0 auto;padding:22px 24px;
+display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#7E908C;letter-spacing:.06em;
 }
 </style>
 </head>
 <body id="top">
-
 <nav>
-  <div class="nav-inner">
-    <a href="#top" class="nav-mark">HV<span class="dot">.</span></a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
+<div class="nav-inner">
+<a href="#top" class="nav-mark">HV<span class="dot">.</span></a>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#achievements">Achievements</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
 </nav>
-
 <header>
-  <svg class="contours" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <path d="M 880 -40 C 760 60 700 180 780 300 C 850 400 1000 430 1120 380 C 1250 320 1280 160 1180 40 C 1100 -50 960 -100 880 -40 Z"/>
-    <path d="M 900 10 C 800 90 760 190 830 285 C 890 365 1010 390 1105 350 C 1210 300 1235 175 1150 80 C 1080 5 970 -40 900 10 Z"/>
-    <path d="M 920 60 C 845 120 815 200 875 270 C 925 335 1020 355 1095 320 C 1175 280 1195 185 1125 115 C 1070 55 985 20 920 60 Z"/>
-    <path d="M 945 110 C 890 155 870 210 915 260 C 955 305 1025 320 1080 293 C 1140 262 1155 195 1100 145 C 1058 105 995 80 945 110 Z"/>
-    <path d="M 965 155 C 930 185 918 220 948 252 C 975 282 1022 292 1058 274 C 1098 253 1108 210 1072 178 C 1044 152 1000 133 965 155 Z"/>
-    <path d="M -80 480 C 60 400 260 390 380 470 C 500 545 560 640 480 720 L -120 720 Z"/>
-    <path d="M -80 540 C 40 470 210 460 315 528 C 415 590 465 665 400 725 L -110 725 Z"/>
-    <path d="M -70 600 C 20 545 155 538 240 592 C 320 640 355 700 305 740 L -95 740 Z"/>
-  </svg>
-  <div class="hero">
-    <div class="geo" id="geoLine"></div>
-    <h1 id="heroName"></h1>
-    <div class="hero-role" id="heroRole"></div>
-    <p class="hero-pitch" id="heroPitch"></p>
-    <div class="hero-cta">
-      <span class="badge" id="heroBadge"></span>
-      <a class="btn primary" id="ctaEmail" href="#">Get in touch</a>
-      <a class="btn" id="ctaLinkedIn" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
-    </div>
-  </div>
+<svg class="contours" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<path d="M 880 -40 C 760 60 700 180 780 300 C 850 400 1000 430 1120 380 C 1250 320 1280 160 1180 40 C 1100 -50 960 -100 880 -40 Z"/>
+<path d="M 900 10 C 800 90 760 190 830 285 C 890 365 1010 390 1105 350 C 1210 300 1235 175 1150 80 C 1080 5 970 -40 900 10 Z"/>
+<path d="M 920 60 C 845 120 815 200 875 270 C 925 335 1020 355 1095 320 C 1175 280 1195 185 1125 115 C 1070 55 985 20 920 60 Z"/>
+<path d="M 945 110 C 890 155 870 210 915 260 C 955 305 1025 320 1080 293 C 1140 262 1155 195 1100 145 C 1058 105 995 80 945 110 Z"/>
+<path d="M 965 155 C 930 185 918 220 948 252 C 975 282 1022 292 1058 274 C 1098 253 1108 210 1072 178 C 1044 152 1000 133 965 155 Z"/>
+<path d="M -80 480 C 60 400 260 390 380 470 C 500 545 560 640 480 720 L -120 720 Z"/>
+<path d="M -80 540 C 40 470 210 460 315 528 C 415 590 465 665 400 725 L -110 725 Z"/>
+<path d="M -70 600 C 20 545 155 538 240 592 C 320 640 355 700 305 740 L -95 740 Z"/>
+</svg>
+<div class="hero">
+<div class="geo" id="geoLine"></div>
+<h1 id="heroName"></h1>
+<div class="hero-role" id="heroRole"></div>
+<p class="hero-pitch" id="heroPitch"></p>
+<div class="hero-cta">
+<span class="badge" id="heroBadge"></span>
+<a class="btn primary" id="ctaEmail" href="#">Get in touch</a>
+<a class="btn" id="ctaLinkedIn" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+</div>
+</div>
 </header>
-
 <div class="bench" aria-label="Key figures">
-  <div class="bench-grid" id="benchGrid"></div>
+<div class="bench-grid" id="benchGrid"></div>
 </div>
-
 <section id="about">
-  <div class="sec-head"><div class="sec-ref">§01 · Orientation</div><h2>About</h2></div>
-  <div class="about-grid">
-    <div class="about-text" id="aboutText"></div>
-    <div class="facts" id="factsList"></div>
-  </div>
-</section>
-<div class="sec-rule"></div>
-
-<section id="experience">
-  <div class="sec-head"><div class="sec-ref">§02 · Route travelled</div><h2>Experience</h2></div>
-  <div class="route" id="routeList"></div>
-</section>
-<div class="sec-rule"></div>
-
-<section id="projects">
-  <div class="sec-head"><div class="sec-ref">§03 · Points of interest</div><h2>Projects</h2></div>
-  <div class="proj-grid" id="projGrid"></div>
-</section>
-<div class="sec-rule"></div>
-
-<section id="achievements">
-  <div class="sec-head"><div class="sec-ref">§04 · Legend</div><h2>Achievements</h2></div>
-  <div class="legend" id="legendList"></div>
-</section>
-<div class="sec-rule"></div>
-
-<section id="skills">
-  <div class="sec-head"><div class="sec-ref">§05 · Toolkit</div><h2>Skills</h2></div>
-  <div class="skill-groups" id="skillGroups"></div>
-</section>
-
-<div class="contact" id="contact">
-  <div class="contact-inner">
-    <div class="sec-ref">§06 · Coordinates</div>
-    <h2>Let's talk</h2>
-    <p id="contactPitch"></p>
-    <div class="hero-cta">
-      <a class="btn primary" id="contactEmail" href="#">Email me</a>
-      <a class="btn" id="contactLinkedIn" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn" id="contactCV" href="#" target="_blank" rel="noopener">Download CV</a>
-    </div>
-  </div>
+<div class="sec-head"><div class="sec-ref">§01 · Orientation</div><h2>About</h2></div>
+<div class="about-grid">
+<div class="about-text" id="aboutText"></div>
+<div class="facts" id="factsList"></div>
 </div>
-
+</section>
+<div class="sec-rule"></div>
+<section id="experience">
+<div class="sec-head"><div class="sec-ref">§02 · Route travelled</div><h2>Experience</h2></div>
+<div class="route" id="routeList"></div>
+</section>
+<div class="sec-rule"></div>
+<section id="projects">
+<div class="sec-head"><div class="sec-ref">§03 · Points of interest</div><h2>Projects</h2></div>
+<div class="proj-grid" id="projGrid"></div>
+</section>
+<div class="sec-rule"></div>
+<section id="achievements">
+<div class="sec-head"><div class="sec-ref">§04 · Legend</div><h2>Achievements</h2></div>
+<div class="legend" id="legendList"></div>
+</section>
+<div class="sec-rule"></div>
+<section id="skills">
+<div class="sec-head"><div class="sec-ref">§05 · Toolkit</div><h2>Skills</h2></div>
+<div class="skill-groups" id="skillGroups"></div>
+</section>
+<div class="contact" id="contact">
+<div class="contact-inner">
+<div class="sec-ref">§06 · Coordinates</div>
+<h2>Let's talk</h2>
+<p id="contactPitch"></p>
+<div class="hero-cta">
+<a class="btn primary" id="contactEmail" href="#">Email me</a>
+<a class="btn" id="contactLinkedIn" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+<a class="btn" id="contactCV" href="#" target="_blank" rel="noopener">Download CV</a>
+</div>
+</div>
+</div>
 <footer>
-  <div class="foot-inner">
-    <span id="footName"></span>
-    <span id="footGeo"></span>
-  </div>
+<div class="foot-inner">
+<span id="footName"></span>
+<span id="footGeo"></span>
+</div>
 </footer>
-
 <script>
 /* ═══════════════════════════════════════════════════════════════════
-   ✏️  EDIT YOUR PORTFOLIO HERE — everything on the page comes from
-   this one DATA object. To add a project, achievement, or job, copy
-   an existing block ({...}), paste it into the list, and edit the
-   text. New items appear first if you put them at the top. Save the
-   file, push to GitHub, done.
-   ═══════════════════════════════════════════════════════════════════ */
+✏️ EDIT YOUR PORTFOLIO HERE — everything on the page comes from
+this one DATA object. To add a project, achievement, or job, copy
+an existing block ({...}), paste it into the list, and edit the
+text. New items appear first if you put them at the top. Save the
+file, push to GitHub, done.
+═══════════════════════════════════════════════════════════════════ */
 const DATA = {
+name: "Hariharan Venkatesan",
+role: "IT Project Manager & Business Analyst",
+location: "Karlsruhe, Germany",
+coordinates: "49.0069° N, 8.4037° E",
+availability: "Available immediately",
+pitch: "I turn ambiguous business problems into shipped digital solutions — from GDPR-compliant platforms to AI-driven process automation. Five years across project management, business analysis, and learning technology, now completing an M.Sc. at the Karlsruhe Institute of Technology.",
 
-  name: "Hariharan Venkatesan",
-  role: "IT Project Manager & Business Analyst",
-  location: "Karlsruhe, Germany",
-  coordinates: "49.0069° N, 8.4037° E",
-  availability: "Available immediately",
+// ── Contact ── replace these three placeholders with your real links
+email: "hariharanve@gmail.com",
+linkedin: "https://www.linkedin.com/in/hariharanvenkatesan/",
+cvUrl: "HariharanVenkatesan-CV.pdf", // your CV PDF, uploaded to the same GitHub repo
 
-  pitch: "I turn ambiguous business problems into shipped digital solutions — from GDPR-compliant platforms to AI-driven process automation. Five years across project management, business analysis, and learning technology, now completing an M.Sc. at the Karlsruhe Institute of Technology.",
+contactPitch: "I'm currently seeking full-time IT Project Manager and Business Analyst roles across Germany and open to relocation. If you think I could be a fit for your team, I'd love to hear from you.",
 
-  // ── Contact ── replace these three placeholders with your real links
-  email: "hariharanve@gmail.com",
-  linkedin: "https://www.linkedin.com/in/hariharanvenkatesan/",
-  cvUrl: "HariharanVenkatesan-CV.pdf", // your CV PDF, uploaded to the same GitHub repo
+stats: [
+{ n: "0", sup: "", k: "audit findings · 12-mo GDPR record" },
+{ n: "20", sup: "+", k: "concurrent programmes managed" },
+{ n: "30", sup: "%", k: "programme effectiveness gain" },
+{ n: "60", sup: "%", k: "documentation turnaround cut" },
+{ n: "95", sup: "%+", k: "stakeholder satisfaction" },
+],
 
-  contactPitch: "I'm currently seeking full-time IT Project Manager and Business Analyst roles across Germany and open to relocation. If you think I could be a fit for your team, I'd love to hear from you.",
+about: [
+"I'm a project manager and business analyst who likes building things that remove friction. At <strong>Momenta Europe</strong> in Stuttgart, I designed and delivered a GDPR-compliant employee access provisioning platform and cut documentation turnaround by <strong>60%</strong> using AI/LLM automation. Before that, at <strong>Dell Technologies</strong>, I managed 20+ concurrent digital learning programmes and won a Brandon Hall HCM Excellence Gold Award.",
+"I'm completing my <strong>M.Sc. in Information Systems Engineering and Management at KIT</strong> (July 2026), where my thesis on Multi-Agent Reinforcement Learning was graded 1.3. I work comfortably across the whole delivery chain — requirements elicitation, stakeholder management, process modelling, and hands-on execution.",
+"Outside of work: a lifelong fascination with cartography and GIS — which explains the contour lines on this page.",
+],
 
-  stats: [
-    { n: "0", sup: "", k: "audit findings · 12-mo GDPR record" },
-    { n: "20", sup: "+", k: "concurrent programmes managed" },
-    { n: "30", sup: "%", k: "programme effectiveness gain" },
-    { n: "60", sup: "%", k: "documentation turnaround cut" },
-    { n: "95", sup: "%+", k: "stakeholder satisfaction" },
-  ],
+facts: [
+{ k: "Education", v: "M.Sc. ISEM, Karlsruhe Institute of Technology (KIT)<br><span class='mini-award'>🎓 Final grade 1.7</span>" },
+{ k: "Languages", v: "English (fluent) · German (B1, improving) · Tamil (native)" },
+{ k: "Location", v: "Karlsruhe — open to relocation across Germany" },
+{ k: "Experience", v: "~5 years · PM, BA & learning technology" },
+],
 
-  about: [
-    "I'm a project manager and business analyst who likes building things that remove friction. At <strong>Momenta Europe</strong> in Stuttgart, I designed and delivered a GDPR-compliant employee access provisioning platform and cut documentation turnaround by <strong>60%</strong> using AI/LLM automation. Before that, at <strong>Dell Technologies</strong>, I managed 20+ concurrent digital learning programmes and won a Brandon Hall HCM Excellence Gold Award.",
-    "I'm completing my <strong>M.Sc. in Information Systems Engineering and Management at KIT</strong> (July 2026), where my thesis on Multi-Agent Reinforcement Learning was graded 1.3. I work comfortably across the whole delivery chain — requirements elicitation, stakeholder management, process modelling, and hands-on execution.",
-    "Outside of work: a lifelong fascination with cartography and GIS — which explains the contour lines on this page.",
-  ],
+experience: [
+{
+when: "Nov 2024 — Aug 2025 · Stuttgart",
+title: "Project Management & Business Development (Working Student)",
+org: "Momenta Europe GmbH",
+points: [
+"Built a GDPR-compliant access provisioning platform end-to-end — manual workflow gone, approvals same-day, and a clean audit record for 12 straight months.",
+"Kept the multi-stakeholder Donau-Bosch Toolchain integration on schedule through weekly syncs, live issue tracking, and blocker resolution.",
+"Spotted an automation opportunity in legal documentation and shipped an AI/LLM solution — turnaround down ~60%.",
+"Backed business development with market analysis and client-facing proposals.",
+],
+tags: ["GDPR & Compliance", "Process Automation", "Stakeholder Management", "AI / LLM Tooling", "Risk & Issue Tracking"],
+},
+{
+when: "Aug 2019 — Oct 2023 · Bangalore",
+title: "Senior Analyst, Learning Design & Development",
+org: "Dell Technologies",
+points: [
+"Ran 20+ concurrent digital programmes end-to-end for global corporate clients, coordinating 10+ cross-functional partners.",
+"Held 95%+ stakeholder satisfaction across every programme — structured needs analyses with 10+ SMEs, designs iterated before launch.",
+"Lifted programme effectiveness 30% by embedding analytics checkpoints into delivery.",
+"Gained 30% production efficiency through process standardisation and modular content architecture.",
+],
+tags: ["Programme Management", "Needs Analysis", "KPI Reporting", "Process Standardisation", "Cross-functional Coordination"],
+},
+],
 
-  facts: [
-    { k: "Education", v: "M.Sc. ISEM, Karlsruhe Institute of Technology (KIT)<br><span class='mini-award'>🎓 Final grade 1.7</span>" },
-    { k: "Languages", v: "English (fluent) · German (B1, improving) · Tamil (native)" },
-    { k: "Location", v: "Karlsruhe — open to relocation across Germany" },
-    { k: "Experience", v: "~5 years · PM, BA & learning technology" },
-  ],
+projects: [
+{
+pin: "Personal Project · Aug 2026",
+title: "Job Application Tracker",
+award: "",
+desc: "A Streamlit + Google Sheets app built to replace a manual spreadsheet — tracks 130+ live job applications with status filtering, inline edits, and a dashboard visualizing application trends.<div style='margin-top:10px;display:flex;gap:8px;flex-wrap:wrap'><a href='https://job-application-tracker-ewsfya3ricaur4h2msdvcv.streamlit.app/' target='_blank' rel='noopener' class='mini-award'>▶ Live demo ↗</a><a href='https://github.com/hariv27/job-application-tracker' target='_blank' rel='noopener' class='mini-award'>💻 Code ↗</a></div>",
+tags: ["Streamlit", "Python", "Google Sheets API", "Data Visualization"],
+},
+{
+pin: "KIT × Mercedes-Benz · Dec 2024",
+title: "FleetEase — Vehicle Pool Booking System",
+award: "🏆 1st Prize, Academic Co-Creation Challenge",
+desc: "Concept and prototype for a Mercedes-Benz internal vehicle pool booking system. Led requirements analysis and solution design in a student team; won first prize against competing teams.",
+tags: ["Requirements Engineering", "Prototyping", "Stakeholder Workshops"],
+},
+{
+pin: "Master's Thesis · KIT",
+title: "Quantifying Coordination Complexity in Multi-Agent RL",
+award: "🎓 Graded 1.3 (distinction)",
+desc: "Developed the CCM metric to measure coordination complexity in multi-agent reinforcement learning, evaluated across five environments. Supervised by Dr. Clemens Puppe and Prof. Andreas Oberweis.",
+tags: ["Research", "Python", "Reinforcement Learning"],
+},
+{
+pin: "Momenta Europe · Stuttgart",
+title: "GDPR-Compliant Access Provisioning Platform",
+award: "",
+desc: "End-to-end design and delivery of an internal platform automating employee access provisioning while ensuring GDPR compliance — from requirements elicitation to rollout.",
+tags: ["Process Design", "GDPR", "Automation"],
+},
+],
 
-  experience: [
-    {
-      when: "Nov 2024 — Aug 2025 · Stuttgart",
-      title: "Project Management & Business Development (Working Student)",
-      org: "Momenta Europe GmbH",
-      points: [
-        "Built a GDPR-compliant access provisioning platform end-to-end — manual workflow gone, approvals same-day, and a clean audit record for 12 straight months.",
-        "Kept the multi-stakeholder Donau-Bosch Toolchain integration on schedule through weekly syncs, live issue tracking, and blocker resolution.",
-        "Spotted an automation opportunity in legal documentation and shipped an AI/LLM solution — turnaround down ~60%.",
-        "Backed business development with market analysis and client-facing proposals.",
-      ],
-      tags: ["GDPR & Compliance", "Process Automation", "Stakeholder Management", "AI / LLM Tooling", "Risk & Issue Tracking"],
-    },
-    {
-      when: "Aug 2019 — Oct 2023 · Bangalore",
-      title: "Senior Analyst, Learning Design & Development",
-      org: "Dell Technologies",
-      points: [
-        "Ran 20+ concurrent digital programmes end-to-end for global corporate clients, coordinating 10+ cross-functional partners.",
-        "Held 95%+ stakeholder satisfaction across every programme — structured needs analyses with 10+ SMEs, designs iterated before launch.",
-        "Lifted programme effectiveness 30% by embedding analytics checkpoints into delivery.",
-        "Gained 30% production efficiency through process standardisation and modular content architecture.",
-      ],
-      tags: ["Programme Management", "Needs Analysis", "KPI Reporting", "Process Standardisation", "Cross-functional Coordination"],
-    },
-  ],
+achievements: [
+{ year: "2026", title: "Master's thesis graded 1.3", note: "Multi-Agent Reinforcement Learning research at KIT." },
+{ year: "2025", title: "60% documentation turnaround reduction", note: "AI/LLM automation initiative at Momenta Europe." },
+{ year: "2024", title: "1st Prize — KIT × Mercedes-Benz Academic Co-Creation Challenge", note: "FleetEase vehicle pool booking system, with Letter of Reference." },
+{ year: "2021", title: "Brandon Hall HCM Excellence Gold Award", note: "For digital learning programme design at Dell Technologies." },
+],
 
-  projects: [
-    {
-      pin: "KIT × Mercedes-Benz · Dec 2024",
-      title: "FleetEase — Vehicle Pool Booking System",
-      award: "🏆 1st Prize, Academic Co-Creation Challenge",
-      desc: "Concept and prototype for a Mercedes-Benz internal vehicle pool booking system. Led requirements analysis and solution design in a student team; won first prize against competing teams.",
-      tags: ["Requirements Engineering", "Prototyping", "Stakeholder Workshops"],
-    },
-    {
-      pin: "Master's Thesis · KIT",
-      title: "Quantifying Coordination Complexity in Multi-Agent RL",
-      award: "🎓 Graded 1.3 (distinction)",
-      desc: "Developed the CCM metric to measure coordination complexity in multi-agent reinforcement learning, evaluated across five environments. Supervised by Dr. Clemens Puppe and Prof. Andreas Oberweis.",
-      tags: ["Research", "Python", "Reinforcement Learning"],
-    },
-    {
-      pin: "Momenta Europe · Stuttgart",
-      title: "GDPR-Compliant Access Provisioning Platform",
-      award: "",
-      desc: "End-to-end design and delivery of an internal platform automating employee access provisioning while ensuring GDPR compliance — from requirements elicitation to rollout.",
-      tags: ["Process Design", "GDPR", "Automation"],
-    },
-  ],
-
-  achievements: [
-    { year: "2026", title: "Master's thesis graded 1.3", note: "Multi-Agent Reinforcement Learning research at KIT." },
-    { year: "2025", title: "60% documentation turnaround reduction", note: "AI/LLM automation initiative at Momenta Europe." },
-    { year: "2024", title: "1st Prize — KIT × Mercedes-Benz Academic Co-Creation Challenge", note: "FleetEase vehicle pool booking system, with Letter of Reference." },
-    { year: "2021", title: "Brandon Hall HCM Excellence Gold Award", note: "For digital learning programme design at Dell Technologies." },
-  ],
-
-  skills: [
-    { group: "Project Management", items: ["Agile & Scrum", "Waterfall", "Stakeholder Management", "Risk Management", "JIRA", "MS Project"] },
-    { group: "Business Analysis", items: ["Requirements Elicitation", "Gap Analysis", "Use Cases & User Stories", "BPMN 2.0", "Process Mining (Celonis)"] },
-    { group: "Tools & Tech", items: ["Python", "SQL", "Power BI", "Confluence", "AI / LLM Automation", "MS Office"] },
-    { group: "Languages", items: ["English — Fluent", "German — B1", "Tamil — Native"] },
-  ],
+skills: [
+{ group: "Project Management", items: ["Agile & Scrum", "Waterfall", "Stakeholder Management", "Risk Management", "JIRA", "MS Project"] },
+{ group: "Business Analysis", items: ["Requirements Elicitation", "Gap Analysis", "Use Cases & User Stories", "BPMN 2.0", "Process Mining (Celonis)"] },
+{ group: "Tools & Tech", items: ["Python", "SQL", "Power BI", "Confluence", "AI / LLM Automation", "MS Office"] },
+{ group: "Languages", items: ["English — Fluent", "German — B1", "Tamil — Native"] },
+],
 };
 /* ═══════════════════ end of editable content ═══════════════════ */
-
 const $ = id => document.getElementById(id);
 const pinIcon = '<svg width="11" height="14" viewBox="0 0 11 14" fill="none"><path d="M5.5 0C2.46 0 0 2.42 0 5.4 0 9.45 5.5 14 5.5 14S11 9.45 11 5.4C11 2.42 8.54 0 5.5 0Zm0 7.6a2.2 2.2 0 1 1 0-4.4 2.2 2.2 0 0 1 0 4.4Z" fill="#C94957"/></svg>';
-
 $("geoLine").textContent = DATA.coordinates + " — " + DATA.location;
 $("heroName").textContent = DATA.name;
 $("heroRole").textContent = DATA.role;
@@ -454,51 +437,45 @@ $("contactCV").href = DATA.cvUrl;
 $("contactPitch").textContent = DATA.contactPitch;
 $("footName").textContent = "© " + new Date().getFullYear() + " " + DATA.name;
 $("footGeo").textContent = DATA.coordinates;
-
 $("aboutText").innerHTML = DATA.about.map(p => `<p>${p}</p>`).join("");
 $("factsList").innerHTML = DATA.facts.map(f =>
-  `<div class="fact"><div class="k">${f.k}</div><div class="v">${f.v}</div></div>`).join("");
-
+`<div class="fact"><div class="k">${f.k}</div><div class="v">${f.v}</div></div>`).join("");
 const [benchFeat, ...benchRest] = DATA.stats;
 $("benchGrid").innerHTML = `
-  <div class="bench-feat">
-    <div class="bench-num">${benchFeat.n}<sup>${benchFeat.sup}</sup></div>
-    <div class="bench-k">${benchFeat.k}</div>
-  </div>` + benchRest.map(s => `
-  <div class="bench-tile">
-    <div class="bench-num">${s.n}<sup>${s.sup}</sup></div>
-    <div class="bench-k">${s.k}</div>
-  </div>`).join("");
-
+<div class="bench-feat">
+<div class="bench-num">${benchFeat.n}<sup>${benchFeat.sup}</sup></div>
+<div class="bench-k">${benchFeat.k}</div>
+</div>` + benchRest.map(s => `
+<div class="bench-tile">
+<div class="bench-num">${s.n}<sup>${s.sup}</sup></div>
+<div class="bench-k">${s.k}</div>
+</div>`).join("");
 $("routeList").innerHTML = DATA.experience.map(e => `
-  <div class="stop">
-    <div class="stop-when">${e.when}</div>
-    <h3>${e.title}</h3>
-    <div class="org">${e.org}</div>
-    <ul>${e.points.map(p => `<li>${p}</li>`).join("")}</ul>
-    <div class="tags" style="margin-top:14px">${(e.tags || []).map(t => `<span class="tag">${t}</span>`).join("")}</div>
-  </div>`).join("");
-
+<div class="stop">
+<div class="stop-when">${e.when}</div>
+<h3>${e.title}</h3>
+<div class="org">${e.org}</div>
+<ul>${e.points.map(p => `<li>${p}</li>`).join("")}</ul>
+<div class="tags" style="margin-top:14px">${(e.tags || []).map(t => `<span class="tag">${t}</span>`).join("")}</div>
+</div>`).join("");
 $("projGrid").innerHTML = DATA.projects.map(p => `
-  <div class="card">
-    <div class="card-pin">${pinIcon}<span>${p.pin}</span></div>
-    <h3>${p.title}</h3>
-    ${p.award ? `<div class="award">${p.award}</div>` : ""}
-    <p>${p.desc}</p>
-    <div class="tags">${p.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
-  </div>`).join("");
-
+<div class="card">
+<div class="card-pin">${pinIcon}<span>${p.pin}</span></div>
+<h3>${p.title}</h3>
+${p.award ? `<div class="award">${p.award}</div>` : ""}
+<p>${p.desc}</p>
+<div class="tags">${p.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+</div>`).join("");
 $("legendList").innerHTML = DATA.achievements.map(a => `
-  <div class="legend-row">
-    <span class="legend-year">${a.year}</span>
-    <div class="legend-body"><strong>${a.title}</strong><span>${a.note}</span></div>
-  </div>`).join("");
-
+<div class="legend-row">
+<span class="legend-year">${a.year}</span>
+<div class="legend-body"><strong>${a.title}</strong><span>${a.note}</span></div>
+</div>`).join("");
 $("skillGroups").innerHTML = DATA.skills.map(g => `
-  <div class="skill-group">
-    <h3>${g.group}</h3>
-    <div class="tags">${g.items.map(i => `<span class="tag">${i}</span>`).join("")}</div>
-  </div>`).join("");
+<div class="skill-group">
+<h3>${g.group}</h3>
+<div class="tags">${g.items.map(i => `<span class="tag">${i}</span>`).join("")}</div>
+</div>`).join("");
 </script>
 </body>
 </html>
